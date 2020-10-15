@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- services -->
+
+    <bean id="userservice" class="org.example.service.UserService">
+        <property name="userDao" ref="userdao"></property>
+        <property name="host" value="1.0.55.1"></property>
+        <property name="list">
+            <list>
+                <value>上海</value>
+                <value>杭州</value>
+                <value>深圳</value>
+            </list>
+        </property>
+        <!-- additional collaborators and configuration for this bean go here -->
+    </bean>
+    <bean id="userdao" class="org.example.dao.UserDao"></bean>
+    <!-- more bean definitions for services go here -->
+
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:annotation-config/>
+
+    <bean id="userservice" class="org.example.service.UserService"></bean>
+    <bean id="userdao" class="org.example.dao.UserDao"></bean>
+    <bean id="userDao01" class="org.example.dao.UserDaoImp01"></bean>
+    <bean id="userDao02" class="org.example.dao.UserDaoImp02"></bean>
+    <bean id="accountService" class="org.example.service.AccountService"></bean>
+    <bean id="accountDao" class="org.example.dao.AccountDao"></bean>
+</beans>
